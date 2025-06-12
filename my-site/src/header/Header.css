@@ -1,0 +1,30 @@
+
+#header {
+    background-color: var(--background2-color); /* Grey background */
+    /* opacity: 0.5; */
+    padding: 30px 10px 30px 10px; /* Some padding */
+    color: var(--text-color);
+    text-align: center; /* Centered text */
+    font-size: 30px; /* Big font size */
+    font-weight: bold;
+    position: sticky; /* Fixed position - sit on top of the page */
+    top: 0;
+    width: 100%; /* Full width */
+    transition: 0.4s; /* Add a transition effect (when scrolling - and font size is decreased) */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-link-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Space between links */
+    background: pink;
+}
+
+.header-links{
+
+}
