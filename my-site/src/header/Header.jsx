@@ -20,7 +20,7 @@ function Header() {
         <div id="header">
             <span>Home</span>
             <div className='header-link-container'>
-                <span className='header-link'>About</span>
+                <a className='header-link' href='#about_page'>About</a>
                 <span className='header-link'>Portfolio</span> {/* In the future I want this to be a hoverable object that brings down experience, projects, skils... */}
                 <span className='header-link'>Contact</span>
             </div>

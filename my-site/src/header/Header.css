@@ -28,5 +28,15 @@
 
 .header-link{
     /* background-color: pink; */
+    all:unset;
+    color: var(--text-color);
     padding: 0.1em;
+
+}
+
+.header-link:hover {
+    color: var(--accent-color);
+    cursor: pointer;
+    border: 1px solid var(--accent-color);
+    border-radius: 8px;
 }

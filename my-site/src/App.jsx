@@ -2,8 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import headshot from './assets/headshot.jpg'
-import sunset from './imgs/sunset.webp'
+import sunset from './imgs/sunset2.webp'
 import Header from './header/Header.jsx'
+import About from './about/About.jsx'
 import './App.css'
 
 function App() {
@@ -24,13 +25,17 @@ function App() {
           <div className='title'>
             <h1>Muhammad Alafifi</h1>
             <h1>Software Engineer</h1>
-            <span className='home-quick-access'>LinkedIn</span>
-            <span className='home-quick-access'>GitHub</span>
-            <span className='home-quick-access'>Email</span>
+            <div className='home-quick-access'> 
+              <a href='https://www.linkedin.com/in/muhammad-alafifi/' target='_blank' className='home-quick-access-buttons'>LinkedIn</a>
+              <a href='https://github.com/al3afifi' target='_blank' className='home-quick-access-buttons'>GitHub</a>
+              <a href='/Muhammad Alafifi resume.pdf' target='_blank' className='home-quick-access-buttons'>Resume</a>
+            </div>
+            
           </div>
         </div>
       </div>
       
+      <About/>
 
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
