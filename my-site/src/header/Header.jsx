@@ -18,7 +18,7 @@ function Header() {
     return (
     <>
         <div id="header">
-            <span>Home</span>
+            <a className='header-link' href='/'>Home</a>
             <div className='header-link-container'>
                 <a className='header-link' href='#about_page'>About</a>
                 <span className='header-link'>Portfolio</span> {/* In the future I want this to be a hoverable object that brings down experience, projects, skils... */}

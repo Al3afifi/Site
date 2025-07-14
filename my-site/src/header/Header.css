@@ -9,6 +9,7 @@
     font-weight: bold;
     position: sticky; /* Fixed position - sit on top of the page */
     top: 0;
+    margin: 0 auto; /* Center the header */
     width: 95vw; /* Full width */
     transition: 0.4s; /* Add a transition effect (when scrolling - and font size is decreased) */
 
