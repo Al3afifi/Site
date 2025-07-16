@@ -1,0 +1,7 @@
+{
+    "Prog": ["C", "C++", "Java", "Python", "JavaScript", "React", "Docker", "AWS"],
+    "Soft:" : ["Git", "Jenkins", "Kubernetes", "MySQL", "PostgreSQL"],
+    "Libraries": ["SciKit-learn", "NumPy", "Pandas"],
+    "Paradigms": ["Object-Oriented Prog.", "Machine Learning", "Supervised Learning", "Functional Prog.", "Procedural Prog.", "Agile", "Scrum"],
+    "Lang": ["English", "Arabic", "Spanish", "Chinese (Mandarin)"]
+}

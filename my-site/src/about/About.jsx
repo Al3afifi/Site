@@ -1,4 +1,5 @@
 import './About.css'
+import skills from './skills.json'
 
 function About() {
     return (
@@ -19,19 +20,51 @@ function About() {
                     In my free time, I enjoy playing football (American soccer), mountain biking, and working out.
                 </p>
             </div>
-            <div className='about-skills'>
+            <div className='about-skills-section'>
                 <h2 className='about-subheader'>Skills</h2>
-                <h3>Technical Skills</h3>
-                <div className='about-skills-subsection'>
-                    <span className='about-skill'>Java</span>
-                    <span className='about-skill'>C</span>
-                    <span className='about-skill'>C++</span>
+                <div className='about-skills-group'>
+                    <h3>Programming Languages</h3>
+                    <div className='about-skills-subsection'>
+                    {skills.Prog.map(skill => (
+                        <span className='about-skill' key={skill}>{skill}</span>
+                    ))}
+                    </div>
                 </div>
-                <h3>Languages</h3>
-                <div className='about-skills-subsection'>
-                    <span className='about-skill'>English</span>
-                    <span className='about-skill'>Arabic</span>
-                    <span className='about-skill'>Spanish</span>
+
+                <div className='about-skills-group'>
+                    <h3>Software/Tools</h3>
+                    <div className='about-skills-subsection'>
+                    {skills['Soft:'].map(skill => (
+                        <span className='about-skill' key={skill}>{skill}</span>
+                    ))}
+                    </div>
+                </div>
+
+                <div className='about-skills-group'>
+                    <h3>Libraries</h3>
+                    <div className='about-skills-subsection'>
+                    {skills.Libraries.map(skill => (
+                        <span className='about-skill' key={skill}>{skill}</span>
+                    ))}
+                    </div>
+                </div>
+
+                <div className='about-skills-group'>
+                    <h3>Concepts/Paradigms</h3>
+                    <div className='about-skills-subsection'>
+                    {skills.Paradigms.map(skill => (
+                        <span className='about-skill' key={skill}>{skill}</span>
+                    ))}
+                    </div>
+                </div>
+
+                <div className='about-skills-group'>
+                    <h3>Spoken Languages</h3>
+                    <div className='about-skills-subsection'>
+                    {skills.Lang.map(lang => (
+                        <span className='about-skill' key={lang}>{lang}</span>
+                    ))}
+                    </div>
                 </div>
             </div>
         </div>

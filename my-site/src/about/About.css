@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    /* justify-content: space-around; */
 }
 
 .about-container {
@@ -36,13 +37,17 @@
     /* width: ; */
 }
 
-.about-skills{
+/* TODO: for self, fix the spacing between them and the growth */
+
+.about-skills-section{
+  /* justify-content: space-around; */
     flex: 1 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: auto;
-    margin: 20px auto;
+    max-width: 475px;
+    /* margin: 20px auto; */
     padding: 20px;
     margin: 20px;
     /* background-color: var(--background2-color); */
@@ -56,13 +61,15 @@
     width: 100%;
     /* border: 1px solid var(--text-color); */
     border-radius: 8px;
-    padding: 5px;
+    padding: 5px 5px;
 
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
-    box-shadow: 0 2px 4px var(--background2-color);
+    gap: 10px;
+    box-shadow: 0px 6px 8px -4px var(--background2-color);
+
+    flex-wrap: wrap;
 }
 
 @media (max-width: 900px) {
@@ -77,4 +84,40 @@
     margin: 10px 0;
     padding: 16px;
   }
+}
+
+.about-skills-group{
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  width: 100%;
+  align-items: start;
+}
+
+.about-skills-group > h3 {
+    font-weight: bold;
+    color: var(--text-color);
+    margin: 10px 0;
+}
+
+.about-skill {
+  font-size: 0.9em;
+  color: var(--text-color);
+  padding: 2px 6px;
+  box-shadow: 1px 2px 2px 0px var(--accent2-color);
+  /* border: 1px solid var(--accent2-color); */
+  background-color: var(--background2-color);
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+/* TODO: fix colors, too many clashing */
+
+.about-skill:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: none;
+    /* box-shadow: 1px 2px 2px 0px var(--accent-color); */
 }

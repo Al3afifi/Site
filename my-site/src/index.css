@@ -9,6 +9,13 @@
   --background2-color: #606c38;
   --background-color: #283618;
 
+  /* --accent-color: #d4a373;
+  --accent2-color: #faedcd;
+  --text-color: #fefae0;
+  --background2-color: #e9edc9;
+  --background-color: #ccd5ae; */
+
+
   color-scheme: light dark;
   color: var(--text-color);
   background-color: var(--background-color);
